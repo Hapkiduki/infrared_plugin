@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.hapkiduki.infrared_plugin">
+    <!--
+      Permission required to access the infrared transmitter.
+    -->
+    <uses-permission android:name="android.permission.TRANSMIT_IR" />
+
+    <!--
+      Declare that the app uses the consumer IR feature.
+      It's marked as not required, so the app can be installed on devices
+      without an IR emitter. The availability check will be done at runtime.
+    -->
+    <uses-feature android:name="android.hardware.consumerir" android:required="false" />
+
+</manifest>
